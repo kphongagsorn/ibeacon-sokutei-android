@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="soinn_api_array">
+        <item>Predict</item>
+        <item>Learn</item>
+        <item>LearnXY</item>
+    </string-array>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveBtn"
+        android:id="@+id/saveBtn"
+        android:onClick="onSaveButtonClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doneBtn"
+        android:id="@+id/doneBtn"
+        android:onClick="onDoneButtonClick"
+        android:layout_toEndOf="@+id/showWifiAPBtn"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rangingText"
+        android:layout_below="@+id/saveBtn"
+        android:layout_toStartOf="@+id/doneBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beaconsOnly"
+        android:id="@+id/showBeaconsBtn"
+        android:onClick="onShowOnlyBeaconsClick"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/showAllBtn" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifiOnly"
+        android:id="@+id/showWifiAPBtn"
+        android:onClick="onShowOnlyWifiAPClick"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/showBeaconsBtn" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:id="@+id/showAllBtn"
+        android:onClick="onShowAllClick"
+        android:layout_above="@+id/rangingText"
+        android:layout_toEndOf="@+id/saveBtn" />
+</RelativeLayout>

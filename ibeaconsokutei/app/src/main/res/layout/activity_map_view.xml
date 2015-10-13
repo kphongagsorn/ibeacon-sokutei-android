@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mapLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doneBtn"
+            android:id="@+id/doneBtn"
+            android:onClick="onDoneButtonClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/mapCoordinatesForMapViewTV"
+            android:layout_alignEnd="@+id/mapCoordinatesForMapViewTV"
+
+         />
+         -->
+
+   <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mapCoordinatesforMapViewAct"
+        android:id="@+id/mapCoordinatesForMapViewTV"
+        android:layout_above="@+id/doneBtn"
+        android:layout_centerHorizontal="true" />
+        -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mapIV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="tamachi16fl"
+        android:src="@drawable/edited_ibeacon_map"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true" />
+       <!-- android:layout_toStartOf="@+id/mapCoordinatesForMapViewTV"
+       android:layout_above="@+id/mapCoordinatesForMapViewTV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="tamachi16fl"
+        android:src="@drawable/edited_ibeacon_map"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+        -->
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pred_map"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <!-- <ScrollView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentStart="true"
+         android:layout_above="@+id/predMapCoordLabel"
+         android:scrollX="@dimen/activity_horizontal_margin"
+         android:scrollY="@dimen/activity_vertical_margin"
+         android:layout_alignParentTop="true">-->
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/predMapImageView"
+         android:src="@drawable/edited_ibeacon_map"
+         android:clickable="false"
+         android:focusable="true"
+         android:nestedScrollingEnabled="false"
+         android:adjustViewBounds="true"
+         android:scaleType="fitXY"
+         android:visibility="visible"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentStart="true"
+         android:layout_above="@+id/predMapCoordLabel"
+         android:layout_alignParentEnd="true"/>
+        <!--
+         android:padding="1dp"
+         android:background="#000000"/>
+         -->
+<!--</ScrollView>-->
+
+<Button
+   style="?android:attr/buttonStyleSmall"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Save"
+   android:id="@+id/saveBtn"
+   android:onClick="onSaveButtonClickPredMap"
+   android:layout_alignTop="@+id/learnXYBtn"
+   android:layout_alignParentStart="true" />
+
+<Button
+   style="?android:attr/buttonStyleSmall"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="LearnXY"
+   android:id="@+id/learnXYBtn"
+   android:onClick="onSoinnLearnXYButtonClickPredMap"
+   android:layout_alignTop="@+id/learnBtn"
+   android:layout_toEndOf="@+id/saveBtn" />
+
+<Button
+   style="?android:attr/buttonStyleSmall"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Learn"
+   android:id="@+id/learnBtn"
+   android:onClick="onSoinnLearnButtonClickPredMap"
+   android:layout_alignTop="@+id/predictBtn"
+   android:layout_toEndOf="@+id/learnXYBtn" />
+
+<Button
+   style="?android:attr/buttonStyleSmall"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Predict"
+   android:id="@+id/predictBtn"
+   android:onClick="onSoinnPredictButtonClickPredMap"
+   android:layout_alignParentBottom="true"
+   android:layout_toEndOf="@+id/learnBtn" />
+
+<TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:textAppearance="?android:attr/textAppearanceMedium"
+   android:text="Tap to set learnxy coordinates"
+   android:id="@+id/predMapCoordLabel"
+    android:layout_alignParentStart="true"
+   android:longClickable="true"
+   android:maxLines="1"
+   android:nestedScrollingEnabled="false"
+   android:textSize="12sp"
+    android:layout_above="@+id/saveBtn"
+    android:layout_alignEnd="@+id/doneBtnPredMap" />
+
+<Button
+   style="?android:attr/buttonStyleSmall"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Done"
+   android:id="@+id/doneBtnPredMap"
+    android:onClick="onDoneButtonClickPredMap"
+    android:layout_alignTop="@+id/predictBtn"
+    android:layout_toEndOf="@+id/predictBtn" />
+
+</RelativeLayout>

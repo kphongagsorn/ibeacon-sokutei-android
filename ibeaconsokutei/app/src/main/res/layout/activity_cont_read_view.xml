@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_cont_read_map"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backBtn"
+        android:onClick="onBackButtonClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to set learnXY coordinates"
+        android:id="@+id/mainViewContReadCoordLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/backBtn" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conReadMainViewImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/mainViewContReadCoordLabel"
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:focusable="true"
+        android:nestedScrollingEnabled="false"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:visibility="visible"/>
+        <!--
+        android:src="@drawable/edited_ibeacon_map"
+        -->
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start,Stop"
+        android:id="@+id/intervalBtn"
+        android:onClick="onIntervalButtonClick"
+        android:layout_below="@+id/mainViewContReadCoordLabel"
+        android:layout_toStartOf="@+id/backBtn" />
+<!--
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/secIntervalSpinner"
+        android:layout_alignTop="@+id/intervalBtn"
+        android:layout_toStartOf="@+id/intervalBtn"
+        android:layout_alignParentBottom="true" />
+        -->
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contReadMapViewSoinnSpinner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/intervalBtn"
+        android:spinnerMode="dropdown"
+        android:layout_toStartOf="@+id/intervalBtn"/>
+    <!-- android:layout_width="100dp" -->
+    <!--android:layout_toStartOf="@+id/secIntervalSpinner"/> -->
+
+
+
+</RelativeLayout>
