@@ -1,5 +1,6 @@
 # ibeacon-sokutei-android
-ibeacon and wifi detection app
+iBeacon and wifi detection app <br>
+Tested on Android KitKat, Nexus 4, 5
 
 ##App Images:
 <img src="https://github.com/kphongagsorn/ibeacon-sokutei-android/blob/master/images/Screenshot_2015-04-14-17-36-55.png" data-canonical-src="https://github.com/kphongagsorn/ibeacon-sokutei-android/blob/master/images/Screenshot_2015-04-14-17-36-55.png" width="200" height="400" /><br>
