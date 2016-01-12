@@ -1,6 +1,6 @@
 # ibeacon-sokutei-android
-iBeacon and wifi detection app <br>
-Calculates a persons location based on IBeacon and wifi signal strength using a custom API connecting to [SOINN](http://www.haselab.info/soinn-e.html)(*Information related to SOINN and private information has been ommitted)
+iBeacon and wifi detection client app <br>
+Calculates a persons location based on iBeacon and wifi signal strength using a custom API connecting to [SOINN](http://www.haselab.info/soinn-e.html)(*Information related to SOINN and private information has been ommitted)
 Tested on Android KitKat, Nexus 4, 5
 
 *Currently source code is somewhat messy. I will clean this up when I get the chance, sorry.
